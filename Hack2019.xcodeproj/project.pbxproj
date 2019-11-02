@@ -19,6 +19,7 @@
 		0BE06481236E02C40035E9CA /* songData.json in Sources */ = {isa = PBXBuildFile; fileRef = 0BE06480236E02C40035E9CA /* songData.json */; };
 		0BE06484236E064B0035E9CA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE06483236E064B0035E9CA /* Data.swift */; };
 		0BE06486236E0E090035E9CA /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE06485236E0E090035E9CA /* SongList.swift */; };
+		0BE06488236E13660035E9CA /* yeet.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BE06487236E13660035E9CA /* yeet.json */; };
 		DCAF3D54DCC0B26D260DB27C /* Pods_Hack2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +35,10 @@
 		0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BE0647B236DFF3F0035E9CA /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		0BE0647D236DFFC90035E9CA /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		0BE06480236E02C40035E9CA /* songData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = songData.json; sourceTree = "<group>"; };
+		0BE06480236E02C40035E9CA /* songData.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = songData.json; sourceTree = "<group>"; };
 		0BE06483236E064B0035E9CA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		0BE06485236E0E090035E9CA /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		0BE06487236E13660035E9CA /* yeet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yeet.json; sourceTree = "<group>"; };
 		1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.debug.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.release.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		0BE0647F236E02980035E9CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0BE06487236E13660035E9CA /* yeet.json */,
 				0BE06480236E02C40035E9CA /* songData.json */,
 			);
 			path = Resources;
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B39A744236DC775000B3923 /* LaunchScreen.storyboard in Resources */,
+				0BE06488236E13660035E9CA /* yeet.json in Resources */,
 				0BDBB6C2236DE4F10092DE6D /* GoogleService-Info.plist in Resources */,
 				0B39A741236DC775000B3923 /* Preview Assets.xcassets in Resources */,
 				0B39A73E236DC775000B3923 /* Assets.xcassets in Resources */,

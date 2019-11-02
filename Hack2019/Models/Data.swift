@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-let songData: [Song] = load("songData.json")
+let songData: [Song] = load("yeet.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
