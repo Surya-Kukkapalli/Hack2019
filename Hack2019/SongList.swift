@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SongList.swift
 //  Hack2019
 //
 //  Created by Surya Kukkapalli on 11/2/19.
@@ -8,17 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SongList: View {
     var body: some View {
-        Text("Hello world")
-        
+        List {
+            SongRow(song: songData[0])
+        }
     }
 }
 
-// yeet
-
-struct ContentView_Previews: PreviewProvider {
+struct SongList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SongList()
     }
 }
