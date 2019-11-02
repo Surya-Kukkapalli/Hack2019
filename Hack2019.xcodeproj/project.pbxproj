@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		0B39A73E236DC775000B3923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A73D236DC775000B3923 /* Assets.xcassets */; };
 		0B39A741236DC775000B3923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A740236DC775000B3923 /* Preview Assets.xcassets */; };
 		0B39A744236DC775000B3923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A742236DC775000B3923 /* LaunchScreen.storyboard */; };
+		DCAF3D54DCC0B26D260DB27C /* Pods_Hack2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0B39A740236DC775000B3923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B39A743236DC775000B3923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B39A745236DC775000B3923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.debug.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.release.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAF3D54DCC0B26D260DB27C /* Pods_Hack2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0B39A736236DC774000B3923 /* Hack2019 */,
 				0B39A735236DC774000B3923 /* Products */,
+				22852155A5BE37C114897763 /* Pods */,
+				7B6F113C890795433FE83908 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		22852155A5BE37C114897763 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */,
+				ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B6F113C890795433FE83908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B39A748236DC775000B3923 /* Build configuration list for PBXNativeTarget "Hack2019" */;
 			buildPhases = (
+				75114FB0C58B63696DF18C72 /* [CP] Check Pods Manifest.lock */,
 				0B39A730236DC774000B3923 /* Sources */,
 				0B39A731236DC774000B3923 /* Frameworks */,
 				0B39A732236DC774000B3923 /* Resources */,
+				1AD8766F37360EE9B67545DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AD8766F37360EE9B67545DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hack2019/Pods-Hack2019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hack2019/Pods-Hack2019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hack2019/Pods-Hack2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75114FB0C58B63696DF18C72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hack2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B39A730236DC774000B3923 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		0B39A749236DC775000B3923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +371,7 @@
 		};
 		0B39A74A236DC775000B3923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
