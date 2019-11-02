@@ -1,0 +1,618 @@
+[
+    {
+      "href": "https://api.spotify.com/v1/playlists/6xblqrLs688ZrCxUOpDGIV/tracks?offset=0&limit=100",
+      "items": [
+        {
+          "added_at": "2019-11-02T21:06:51Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3b8QkneNDz4JHKKKlLgYZg"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3b8QkneNDz4JHKKKlLgYZg",
+                  "id": "3b8QkneNDz4JHKKKlLgYZg",
+                  "name": "Florida Georgia Line",
+                  "type": "artist",
+                  "uri": "spotify:artist:3b8QkneNDz4JHKKKlLgYZg"
+                }
+              ],
+              "available_markets": [
+                "AD",
+                "AE",
+                "AR",
+                "AT",
+                "AU",
+                "BE",
+                "BG",
+                "BH",
+                "BO",
+                "BR",
+                "CA",
+                "CH",
+                "CL",
+                "CO",
+                "CR",
+                "CY",
+                "CZ",
+                "DE",
+                "DK",
+                "DO",
+                "DZ",
+                "EC",
+                "EE",
+                "EG",
+                "ES",
+                "FI",
+                "FR",
+                "GB",
+                "GR",
+                "GT",
+                "HK",
+                "HN",
+                "HU",
+                "ID",
+                "IE",
+                "IL",
+                "IN",
+                "IS",
+                "IT",
+                "JO",
+                "JP",
+                "KW",
+                "LB",
+                "LI",
+                "LT",
+                "LU",
+                "LV",
+                "MA",
+                "MC",
+                "MT",
+                "MX",
+                "MY",
+                "NI",
+                "NL",
+                "NO",
+                "NZ",
+                "OM",
+                "PA",
+                "PE",
+                "PH",
+                "PL",
+                "PS",
+                "PT",
+                "PY",
+                "QA",
+                "RO",
+                "SA",
+                "SE",
+                "SG",
+                "SK",
+                "SV",
+                "TH",
+                "TN",
+                "TR",
+                "TW",
+                "US",
+                "UY",
+                "VN",
+                "ZA"
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5NG7WZaCZZ12M5LJm0JcVc"
+              },
+              "href": "https://api.spotify.com/v1/albums/5NG7WZaCZZ12M5LJm0JcVc",
+              "id": "5NG7WZaCZZ12M5LJm0JcVc",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/9482e0056c97caaf7db8f8bd94c054003bdbbdeb",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/2879f4bab0586f408db36039d2de73f4eb8b4887",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/b9154f92c35d6bafed1c264cf365e46a0422bf28",
+                  "width": 64
+                }
+              ],
+              "name": "Anything Goes",
+              "release_date": "2014-10-14",
+              "release_date_precision": "day",
+              "total_tracks": 12,
+              "type": "album",
+              "uri": "spotify:album:5NG7WZaCZZ12M5LJm0JcVc"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3b8QkneNDz4JHKKKlLgYZg"
+                },
+                "href": "https://api.spotify.com/v1/artists/3b8QkneNDz4JHKKKlLgYZg",
+                "id": "3b8QkneNDz4JHKKKlLgYZg",
+                "name": "Florida Georgia Line",
+                "type": "artist",
+                "uri": "spotify:artist:3b8QkneNDz4JHKKKlLgYZg"
+              }
+            ],
+            "available_markets": [
+              "AD",
+              "AE",
+              "AR",
+              "AT",
+              "AU",
+              "BE",
+              "BG",
+              "BH",
+              "BO",
+              "BR",
+              "CA",
+              "CH",
+              "CL",
+              "CO",
+              "CR",
+              "CY",
+              "CZ",
+              "DE",
+              "DK",
+              "DO",
+              "DZ",
+              "EC",
+              "EE",
+              "EG",
+              "ES",
+              "FI",
+              "FR",
+              "GB",
+              "GR",
+              "GT",
+              "HK",
+              "HN",
+              "HU",
+              "ID",
+              "IE",
+              "IL",
+              "IN",
+              "IS",
+              "IT",
+              "JO",
+              "JP",
+              "KW",
+              "LB",
+              "LI",
+              "LT",
+              "LU",
+              "LV",
+              "MA",
+              "MC",
+              "MT",
+              "MX",
+              "MY",
+              "NI",
+              "NL",
+              "NO",
+              "NZ",
+              "OM",
+              "PA",
+              "PE",
+              "PH",
+              "PL",
+              "PS",
+              "PT",
+              "PY",
+              "QA",
+              "RO",
+              "SA",
+              "SE",
+              "SG",
+              "SK",
+              "SV",
+              "TH",
+              "TN",
+              "TR",
+              "TW",
+              "US",
+              "UY",
+              "VN",
+              "ZA"
+            ],
+            "disc_number": 1,
+            "duration_ms": 184706,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "USUM71412652"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0El2Zyt68nYySFDG87hZgM"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0El2Zyt68nYySFDG87hZgM",
+            "id": "0El2Zyt68nYySFDG87hZgM",
+            "is_local": false,
+            "name": "Sun Daze",
+            "popularity": 63,
+            "preview_url": "https://p.scdn.co/mp3-preview/ff386f910fd03fdb80a5cfd7de2d2cd1b402d78e?cid=774b29d4f13844c495f206cafdad9c86",
+            "track": true,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:0El2Zyt68nYySFDG87hZgM"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2019-11-02T21:07:05Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1n2pb9Tsfe4SwAjmUac6YT"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1n2pb9Tsfe4SwAjmUac6YT",
+                  "id": "1n2pb9Tsfe4SwAjmUac6YT",
+                  "name": "Jake Owen",
+                  "type": "artist",
+                  "uri": "spotify:artist:1n2pb9Tsfe4SwAjmUac6YT"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5N7z5wy4yFo4pH61DqOeen"
+              },
+              "href": "https://api.spotify.com/v1/albums/5N7z5wy4yFo4pH61DqOeen",
+              "id": "5N7z5wy4yFo4pH61DqOeen",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273ee41d68ba7b6672fbe7071fe",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02ee41d68ba7b6672fbe7071fe",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851ee41d68ba7b6672fbe7071fe",
+                  "width": 64
+                }
+              ],
+              "name": "Jake Owen",
+              "release_date": "2018-08-07",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:5N7z5wy4yFo4pH61DqOeen"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1n2pb9Tsfe4SwAjmUac6YT"
+                },
+                "href": "https://api.spotify.com/v1/artists/1n2pb9Tsfe4SwAjmUac6YT",
+                "id": "1n2pb9Tsfe4SwAjmUac6YT",
+                "name": "Jake Owen",
+                "type": "artist",
+                "uri": "spotify:artist:1n2pb9Tsfe4SwAjmUac6YT"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 183140,
+            "episode": false,
+            "explicit": true,
+            "external_ids": {
+              "isrc": "QZ22S1700044"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2QGa7i7o0UwmgUsSkM8Tt4"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2QGa7i7o0UwmgUsSkM8Tt4",
+            "id": "2QGa7i7o0UwmgUsSkM8Tt4",
+            "is_local": false,
+            "name": "Down To The Honkytonk",
+            "popularity": 6,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:2QGa7i7o0UwmgUsSkM8Tt4"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2019-11-02T21:07:18Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6yJCxee7QumYr820xdIsjo"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6yJCxee7QumYr820xdIsjo",
+                  "id": "6yJCxee7QumYr820xdIsjo",
+                  "name": "Zac Brown Band",
+                  "type": "artist",
+                  "uri": "spotify:artist:6yJCxee7QumYr820xdIsjo"
+                }
+              ],
+              "available_markets": [
+                "AD",
+                "AE",
+                "AR",
+                "AT",
+                "AU",
+                "BE",
+                "BG",
+                "BH",
+                "BO",
+                "BR",
+                "CA",
+                "CH",
+                "CL",
+                "CO",
+                "CR",
+                "CY",
+                "CZ",
+                "DE",
+                "DK",
+                "DO",
+                "DZ",
+                "EC",
+                "EE",
+                "EG",
+                "ES",
+                "FI",
+                "FR",
+                "GB",
+                "GR",
+                "GT",
+                "HK",
+                "HN",
+                "HU",
+                "ID",
+                "IE",
+                "IL",
+                "IS",
+                "IT",
+                "JO",
+                "JP",
+                "KW",
+                "LB",
+                "LI",
+                "LT",
+                "LU",
+                "LV",
+                "MA",
+                "MC",
+                "MT",
+                "MX",
+                "MY",
+                "NI",
+                "NL",
+                "NO",
+                "NZ",
+                "OM",
+                "PA",
+                "PE",
+                "PH",
+                "PL",
+                "PS",
+                "PT",
+                "PY",
+                "QA",
+                "RO",
+                "SA",
+                "SE",
+                "SG",
+                "SK",
+                "SV",
+                "TH",
+                "TN",
+                "TR",
+                "TW",
+                "US",
+                "UY",
+                "VN",
+                "ZA"
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/0Im5nUhAuNDSYVjfPh7RyS"
+              },
+              "href": "https://api.spotify.com/v1/albums/0Im5nUhAuNDSYVjfPh7RyS",
+              "id": "0Im5nUhAuNDSYVjfPh7RyS",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2733f6f4ab78c05dfdfcc37a205",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e023f6f4ab78c05dfdfcc37a205",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048513f6f4ab78c05dfdfcc37a205",
+                  "width": 64
+                }
+              ],
+              "name": "The Foundation",
+              "release_date": "2008-11-17",
+              "release_date_precision": "day",
+              "total_tracks": 12,
+              "type": "album",
+              "uri": "spotify:album:0Im5nUhAuNDSYVjfPh7RyS"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6yJCxee7QumYr820xdIsjo"
+                },
+                "href": "https://api.spotify.com/v1/artists/6yJCxee7QumYr820xdIsjo",
+                "id": "6yJCxee7QumYr820xdIsjo",
+                "name": "Zac Brown Band",
+                "type": "artist",
+                "uri": "spotify:artist:6yJCxee7QumYr820xdIsjo"
+              }
+            ],
+            "available_markets": [
+              "AD",
+              "AE",
+              "AR",
+              "AT",
+              "AU",
+              "BE",
+              "BG",
+              "BH",
+              "BO",
+              "BR",
+              "CA",
+              "CH",
+              "CL",
+              "CO",
+              "CR",
+              "CY",
+              "CZ",
+              "DE",
+              "DK",
+              "DO",
+              "DZ",
+              "EC",
+              "EE",
+              "EG",
+              "ES",
+              "FI",
+              "FR",
+              "GB",
+              "GR",
+              "GT",
+              "HK",
+              "HN",
+              "HU",
+              "ID",
+              "IE",
+              "IL",
+              "IS",
+              "IT",
+              "JO",
+              "JP",
+              "KW",
+              "LB",
+              "LI",
+              "LT",
+              "LU",
+              "LV",
+              "MA",
+              "MC",
+              "MT",
+              "MX",
+              "MY",
+              "NI",
+              "NL",
+              "NO",
+              "NZ",
+              "OM",
+              "PA",
+              "PE",
+              "PH",
+              "PL",
+              "PS",
+              "PT",
+              "PY",
+              "QA",
+              "RO",
+              "SA",
+              "SE",
+              "SG",
+              "SK",
+              "SV",
+              "TH",
+              "TN",
+              "TR",
+              "TW",
+              "US",
+              "UY",
+              "VN",
+              "ZA"
+            ],
+            "disc_number": 1,
+            "duration_ms": 238146,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "USAT20804178"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4dGJf1SER1T6ooX46vwzRB"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4dGJf1SER1T6ooX46vwzRB",
+            "id": "4dGJf1SER1T6ooX46vwzRB",
+            "is_local": false,
+            "name": "Chicken Fried",
+            "popularity": 78,
+            "preview_url": "https://p.scdn.co/mp3-preview/55a49554cd2a46602b15a0ba15477073d938c915?cid=774b29d4f13844c495f206cafdad9c86",
+            "track": true,
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:4dGJf1SER1T6ooX46vwzRB"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        }
+      ],
+      "limit": 100,
+      "next": null,
+      "offset": 0,
+      "previous": null,
+      "total": 3
+    }
+]

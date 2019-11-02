@@ -1,0 +1,211 @@
+[
+    {
+      "href": "https://api.spotify.com/v1/users/yousirname17/playlists?offset=0&limit=5",
+      "items": [
+        {
+          "collaborative": false,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6xblqrLs688ZrCxUOpDGIV"
+          },
+          "href": "https://api.spotify.com/v1/playlists/6xblqrLs688ZrCxUOpDGIV",
+          "id": "6xblqrLs688ZrCxUOpDGIV",
+          "images": [],
+          "name": "Hack2019",
+          "owner": {
+            "display_name": "Surya Kukkapalli",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MSxmM2ZkYjdjNzY0NjUxNjk3ZDdiNzA1YmZmMzZmYmRkODQzNWY2MmI4",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6xblqrLs688ZrCxUOpDGIV/tracks",
+            "total": 0
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:6xblqrLs688ZrCxUOpDGIV"
+        },
+        {
+          "collaborative": false,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6k45WAyzjdZr7Iw8JR54Su"
+          },
+          "href": "https://api.spotify.com/v1/playlists/6k45WAyzjdZr7Iw8JR54Su",
+          "id": "6k45WAyzjdZr7Iw8JR54Su",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/439153912aeded45f0a2f0ee17e507d985f78ce99482e0056c97caaf7db8f8bd94c054003bdbbdebab67616d0000b27305e4408393e1c81a8ab1bf26ab67616d0000b2733f6f4ab78c05dfdfcc37a205",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/439153912aeded45f0a2f0ee17e507d985f78ce99482e0056c97caaf7db8f8bd94c054003bdbbdebab67616d0000b27305e4408393e1c81a8ab1bf26ab67616d0000b2733f6f4ab78c05dfdfcc37a205",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/439153912aeded45f0a2f0ee17e507d985f78ce99482e0056c97caaf7db8f8bd94c054003bdbbdebab67616d0000b27305e4408393e1c81a8ab1bf26ab67616d0000b2733f6f4ab78c05dfdfcc37a205",
+              "width": 60
+            }
+          ],
+          "name": "Good Country",
+          "owner": {
+            "display_name": "Surya Kukkapalli",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MzUsZDM1YWRkM2JiZTE1N2VhNjljOTc0ZThiYTQwN2JjZDUzZTRlNmRjMg==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6k45WAyzjdZr7Iw8JR54Su/tracks",
+            "total": 32
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:6k45WAyzjdZr7Iw8JR54Su"
+        },
+        {
+          "collaborative": false,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/1975Fk3uqdanZHxBrAFho5"
+          },
+          "href": "https://api.spotify.com/v1/playlists/1975Fk3uqdanZHxBrAFho5",
+          "id": "1975Fk3uqdanZHxBrAFho5",
+          "images": [
+            {
+              "height": null,
+              "url": "https://pl.scdn.co/images/pl/default/0f9b4e890e8337d6d7457b4cdc3ec5972481c9c1",
+              "width": null
+            }
+          ],
+          "name": "All Songs",
+          "owner": {
+            "display_name": "Surya Kukkapalli",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MTA3MixmYzc5OWVjN2Q0NWM5N2ZiY2Q3NGQ5YzkzNjFkODZlZGI0MDdkZDQx",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/1975Fk3uqdanZHxBrAFho5/tracks",
+            "total": 1116
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:1975Fk3uqdanZHxBrAFho5"
+        },
+        {
+          "collaborative": false,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/2PDPDXnTtfI9bcw3LnJ0ed"
+          },
+          "href": "https://api.spotify.com/v1/playlists/2PDPDXnTtfI9bcw3LnJ0ed",
+          "id": "2PDPDXnTtfI9bcw3LnJ0ed",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b273488f7916bcb14082e1acb101ab67616d0000b27373ea1377744e32209a4dec6eab67616d0000b273a02ce43e71cfbb3c80158cdeab67616d0000b273f083bcd7b933889d284772c6",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b273488f7916bcb14082e1acb101ab67616d0000b27373ea1377744e32209a4dec6eab67616d0000b273a02ce43e71cfbb3c80158cdeab67616d0000b273f083bcd7b933889d284772c6",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b273488f7916bcb14082e1acb101ab67616d0000b27373ea1377744e32209a4dec6eab67616d0000b273a02ce43e71cfbb3c80158cdeab67616d0000b273f083bcd7b933889d284772c6",
+              "width": 60
+            }
+          ],
+          "name": "Vibes",
+          "owner": {
+            "display_name": "Surya Kukkapalli",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MTgsYmNmOTJjZjkxNjk4NzA2NTg2NzAzZWI1ZjlmNGVhMDIxYmM1NzUzZQ==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/2PDPDXnTtfI9bcw3LnJ0ed/tracks",
+            "total": 16
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:2PDPDXnTtfI9bcw3LnJ0ed"
+        },
+        {
+          "collaborative": false,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6apmw282zo2fwwgf2zHy1B"
+          },
+          "href": "https://api.spotify.com/v1/playlists/6apmw282zo2fwwgf2zHy1B",
+          "id": "6apmw282zo2fwwgf2zHy1B",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/3552a60be0f2d1851c5b91ac4a52a50375d9130aab67616d0000b27376767c56ea68780fff2efb31ab67616d0000b273893286b52b5e8c870819b880ab67616d0000b2738aa4f3ab66823042785b7f17",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/3552a60be0f2d1851c5b91ac4a52a50375d9130aab67616d0000b27376767c56ea68780fff2efb31ab67616d0000b273893286b52b5e8c870819b880ab67616d0000b2738aa4f3ab66823042785b7f17",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/3552a60be0f2d1851c5b91ac4a52a50375d9130aab67616d0000b27376767c56ea68780fff2efb31ab67616d0000b273893286b52b5e8c870819b880ab67616d0000b2738aa4f3ab66823042785b7f17",
+              "width": 60
+            }
+          ],
+          "name": "Road Trip",
+          "owner": {
+            "display_name": "Surya Kukkapalli",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/yousirname17"
+            },
+            "href": "https://api.spotify.com/v1/users/yousirname17",
+            "id": "yousirname17",
+            "type": "user",
+            "uri": "spotify:user:yousirname17"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "NTgsMDgxMWQ1MTM3ZGMyZDBiOWZiMjMwYWZiNWY0MGI2NGM1MjZmZGExYw==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6apmw282zo2fwwgf2zHy1B/tracks",
+            "total": 54
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:6apmw282zo2fwwgf2zHy1B"
+        }
+      ],
+      "limit": 5,
+      "next": "https://api.spotify.com/v1/users/yousirname17/playlists?offset=5&limit=5",
+      "offset": 0,
+      "previous": null,
+      "total": 18
+    }
+]
