@@ -13,6 +13,7 @@
 		0B39A73E236DC775000B3923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A73D236DC775000B3923 /* Assets.xcassets */; };
 		0B39A741236DC775000B3923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A740236DC775000B3923 /* Preview Assets.xcassets */; };
 		0B39A744236DC775000B3923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A742236DC775000B3923 /* LaunchScreen.storyboard */; };
+		0BDBB6C2236DE4F10092DE6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */; };
 		DCAF3D54DCC0B26D260DB27C /* Pods_Hack2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0B39A740236DC775000B3923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B39A743236DC775000B3923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B39A745236DC775000B3923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.debug.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.release.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		0B39A736236DC774000B3923 /* Hack2019 */ = {
 			isa = PBXGroup;
 			children = (
+				0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */,
 				0B39A737236DC774000B3923 /* AppDelegate.swift */,
 				0B39A739236DC774000B3923 /* SceneDelegate.swift */,
 				0B39A73B236DC774000B3923 /* ContentView.swift */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B39A744236DC775000B3923 /* LaunchScreen.storyboard in Resources */,
+				0BDBB6C2236DE4F10092DE6D /* GoogleService-Info.plist in Resources */,
 				0B39A741236DC775000B3923 /* Preview Assets.xcassets in Resources */,
 				0B39A73E236DC775000B3923 /* Assets.xcassets in Resources */,
 			);
