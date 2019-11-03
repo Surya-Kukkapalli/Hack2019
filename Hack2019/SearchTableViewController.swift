@@ -23,27 +23,7 @@ class SearchTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
-    // MARK: - Button functions
-    
-    @objc func addButtonPressed() {
-//        let addContactVC = AddContactViewController()
-//        navigationController?.pushViewController(addContactVC, animated: true)
-    }
-    
-    @objc func showEditing(_ sender: UIBarButtonItem) {
-            if self.tableView.isEditing {
-                self.tableView.isEditing = false
-                self.navigationItem.leftBarButtonItem?.title = "Edit"
-            } else {
-                self.tableView.isEditing = true
-                self.navigationItem.leftBarButtonItem?.title = "Done"
-            }
-    //        self.tableView.reloadData()
-        }
 
     // MARK: - Table view data source
 
@@ -119,25 +99,6 @@ extension SearchTableViewController {
         // If user goes to different view controller, search bar will disappear
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
-        
-        // Setting up add button
-        let addButton = UIButton(type: .contactAdd)
-        addButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        addButton.contentMode = .scaleAspectFit
-        addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
-        navigationItem.rightBarButtonItem  = UIBarButtonItem(customView: addButton)
-        
-        // Setting up edit button
-        let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(showEditing))
-        self.navigationItem.leftBarButtonItem = editButton
-        
-        /*
-        // In a storyboard-based application, you will often want to do a little preparation before navigation
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            // Get the new view controller using segue.destination.
-            // Pass the selected object to the new view controller.
-        }
-        */
     }
 }
 

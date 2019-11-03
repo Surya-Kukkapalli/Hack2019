@@ -9,7 +9,7 @@
 import UIKit
 
 class SongTableViewCell: UITableViewCell {
-
+    
     public let albumPic: UIImageView = {
             let pic = UIImageView()
             pic.layer.cornerRadius = 10
@@ -20,8 +20,9 @@ class SongTableViewCell: UITableViewCell {
         
         public let songNameLabel: UILabel = {
             let label = UILabel()
-            label.textColor = .black
-            label.font = .boldSystemFont(ofSize: 19)
+            label.isEnabled = true
+            label.textColor = .label
+            label.font = .systemFont(ofSize: 19)
             label.textAlignment = .left
             label.translatesAutoresizingMaskIntoConstraints = false
             label.superview?.bringSubviewToFront(label)
@@ -30,7 +31,8 @@ class SongTableViewCell: UITableViewCell {
         
         public let artistLabel: UILabel = {
             let label = UILabel()
-            label.textColor = .black
+            label.isEnabled = true
+            label.textColor = .secondaryLabel
             label.font = .systemFont(ofSize: 13)
             label.textAlignment = .left
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -77,4 +79,16 @@ class SongTableViewCell: UITableViewCell {
             albumPic.widthAnchor.constraint(equalTo: self.heightAnchor, constant: -17).isActive = true
         }
 
+}
+
+extension UIColor {
+    static func adaptiveTextColor() -> UIColor {
+        if #available(iOS 13, *) {
+            return UIColor.init { (trait) -> UIColor in
+                // the color can be from your own color config struct as well.
+                return trait.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+            }
+        }
+        else { return UIColor.white }
+    }
 }

@@ -15,14 +15,27 @@ class SongTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.tableView.register(SongTableViewCell.self, forCellReuseIdentifier: cellId)
         setupNavigationBarItems();
+        refreshControl = UIRefreshControl()
+        configureRefreshControl()
     }
+    
+    @objc func addButtonPressed() {
+            let searchTableVC = SearchTableViewController()
+            navigationController?.pushViewController(searchTableVC, animated: true)
+        }
+        
+    @objc func showEditing(_ sender: UIBarButtonItem) {
+            if self.tableView.isEditing {
+                self.tableView.isEditing = false
+                self.navigationItem.leftBarButtonItem?.title = "Edit"
+            } else {
+                self.tableView.isEditing = true
+                self.navigationItem.leftBarButtonItem?.title = "Done"
+            }
+    //        self.tableView.reloadData()
+        }
 
     // MARK: - Table view data source
 
@@ -51,6 +64,41 @@ class SongTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+         
+         let confirmDelete = UIAlertController()
+         confirmDelete.title = "Are you sure you want to delete this song from the queue?"
+         confirmDelete.message = "This cannot be undone."
+         
+//        let voteAction = UIContextualAction(style: .normal, title: "Vote") { (action: UIContextualAction, sourceView: UIView, actionPerformed: (Bool) -> Void) in
+//             // TODO: do something when they vote
+//
+//             actionPerformed(true)
+//         }
+         
+         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action: UIContextualAction, sourceView: UIView, actionPerformed: @escaping (Bool) -> Void) in
+             
+             // configuring actions inside here so actionPerformed can be evaluated upon alert selection
+             let yesAction = UIAlertAction(title: "Yes", style: .default, handler: { action in
+                 actionPerformed(true)
+             })
+             let noAction = UIAlertAction(title: "No", style: .cancel, handler: { action in
+                 actionPerformed(false)
+             })
+             confirmDelete.addAction(yesAction)
+             confirmDelete.addAction(noAction)
+             self.present(confirmDelete, animated: true)
+         }
+         
+//         return UISwipeActionsConfiguration(actions: [voteAction,deleteAction])
+         return UISwipeActionsConfiguration(actions: [deleteAction])
+
+     }
 
     /*
     // Override to support conditional editing of the table view.
@@ -99,11 +147,31 @@ extension SongTableViewController {
         let addButton = UIButton(type: .contactAdd)
         addButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         addButton.contentMode = .scaleAspectFit
-        //addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
         navigationItem.rightBarButtonItem  = UIBarButtonItem(customView: addButton)
         
         // Setting up edit button
-        //let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(showEditing))
-        //self.navigationItem.leftBarButtonItem = editButton
+        let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(showEditing))
+        self.navigationItem.leftBarButtonItem = editButton
     }
 }
+// MARK: Refresh control
+extension SongTableViewController {
+    
+    func configureRefreshControl () {
+        // Add the refresh control to your UIScrollView object.
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(handleRefreshControl),for: .valueChanged)
+    }
+    
+    @objc func handleRefreshControl() {
+//        self.tableView.reloadData()
+        print("hello, world")
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.refreshControl?.endRefreshing()
+        }
+    }
+    
+}
+
