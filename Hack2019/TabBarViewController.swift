@@ -22,12 +22,11 @@ class TabBarViewController: UITabBarController {
         let searchNavController = UINavigationController(rootViewController: searchVC)
         searchNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         
-//        let favoritesVC = FavoritesViewController()
-//        let favoritesNavController = UINavigationController(rootViewController: favoritesVC)
-//        favoritesNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-//
-//        viewControllers = [contactsNavController, circlesNavController, favoritesNavController]
-        viewControllers = [songNavController, searchNavController]
+        let currentSongVC = CurrentSongViewController()
+        let currentSongNavController = UINavigationController(rootViewController: currentSongVC)
+        currentSongNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
+        
+        viewControllers = [songNavController, searchNavController, currentSongNavController]
     }
 
 }
