@@ -19,6 +19,17 @@ class HistoryViewController: UITableViewController {
         configureRefreshControl()
         setupNavigationBarItems()
     }
+    
+    @objc func showEditing(_ sender: UIBarButtonItem) {
+            if self.tableView.isEditing {
+                self.tableView.isEditing = false
+                self.navigationItem.leftBarButtonItem?.title = "Edit"
+            } else {
+                self.tableView.isEditing = true
+                self.navigationItem.leftBarButtonItem?.title = "Done"
+            }
+    //        self.tableView.reloadData()
+        }
 
     // MARK: - Table view data source
 
@@ -65,11 +76,15 @@ class HistoryViewController: UITableViewController {
 // MARK: - Navigation
 extension HistoryViewController {
     private func setupNavigationBarItems(){
-        navigationItem.title = "Played Songs"
+        navigationItem.title = "History"
         navigationController?.navigationBar.prefersLargeTitles = true
         // If user goes to different view controller, search bar will disappear
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
+        
+        // Setting up edit button
+        let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(showEditing))
+        self.navigationItem.leftBarButtonItem = editButton
     }
 }
 

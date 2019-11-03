@@ -60,7 +60,7 @@ class CurrentSongViewController: UIViewController {
     }
     
     @objc func infoButtonPressed() {
-            let songDetailsTableVC = SongDetailsTableViewController()
+            let songDetailsTableVC = SongDetailsTableViewController(nibName: nil, bundle: nil)
             navigationController?.pushViewController(songDetailsTableVC, animated: true)
         }
     

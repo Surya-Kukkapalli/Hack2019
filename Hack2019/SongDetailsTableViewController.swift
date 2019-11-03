@@ -11,6 +11,15 @@ import UIKit
 class SongDetailsTableViewController: UITableViewController {
     
     let cellId = "SongTableViewCell"
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        hidesBottomBarWhenPushed = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +64,6 @@ class SongDetailsTableViewController: UITableViewController {
 // MARK: Navigation
 extension SongDetailsTableViewController {
     private func setupNavigationBarItems(){
-        navigationItem.title = "Song Queue"
-        navigationController?.navigationBar.prefersLargeTitles = true
-}
+        navigationItem.largeTitleDisplayMode = .never
+    }
 }
