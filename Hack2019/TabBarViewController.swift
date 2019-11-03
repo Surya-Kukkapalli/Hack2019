@@ -18,7 +18,8 @@ class TabBarViewController: UITabBarController {
         let songNavController = UINavigationController(rootViewController: songVC)
         songNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
         
-        let searchVC = SearchTableViewController()
+        let searchVC = SearchTableViewController(nibName: nil, bundle: nil)
+        searchVC.hideTabBar = false
         let searchNavController = UINavigationController(rootViewController: searchVC)
         searchNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         

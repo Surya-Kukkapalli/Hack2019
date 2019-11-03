@@ -60,9 +60,10 @@ class CurrentSongViewController: UIViewController {
     }
     
     @objc func infoButtonPressed() {
-            let songDetailsTableVC = SongDetailsTableViewController(nibName: nil, bundle: nil)
-            navigationController?.pushViewController(songDetailsTableVC, animated: true)
-        }
+        let songDetailsTableVC = SongDetailsTableViewController(nibName: nil, bundle: nil)
+        songDetailsTableVC.navigationItem.title = songLabel.text
+        navigationController?.pushViewController(songDetailsTableVC, animated: true)
+    }
     
     
     private func configureContraints() {

@@ -22,9 +22,10 @@ class SongTableViewController: UITableViewController {
     }
     
     @objc func addButtonPressed() {
-            let searchTableVC = SearchTableViewController()
-            navigationController?.pushViewController(searchTableVC, animated: true)
-        }
+        let searchTableVC = SearchTableViewController(nibName: nil, bundle: nil)
+        searchTableVC.hideTabBar = true
+        navigationController?.pushViewController(searchTableVC, animated: true)
+    }
         
     @objc func showEditing(_ sender: UIBarButtonItem) {
             if self.tableView.isEditing {
@@ -101,8 +102,10 @@ class SongTableViewController: UITableViewController {
      }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let songDetailsTableVC = SongDetailsTableViewController(nibName: nil, bundle: nil)
         
+        let songDetailsTableVC = SongDetailsTableViewController(nibName: nil, bundle: nil)
+        // TODO: once we have array of songs, replace this with specific song name using indexPath
+        songDetailsTableVC.navigationItem.title = "Surya Kukkapalli"
         navigationController?.pushViewController(songDetailsTableVC, animated: true)
     }
     
