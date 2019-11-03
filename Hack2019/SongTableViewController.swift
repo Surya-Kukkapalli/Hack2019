@@ -9,6 +9,8 @@
 import UIKit
 
 class SongTableViewController: UITableViewController {
+    
+    let cellId = "SongTableViewCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,28 +20,37 @@ class SongTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.tableView.register(SongTableViewCell.self, forCellReuseIdentifier: cellId)
+        setupNavigationBarItems();
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        guard let myCell = tableView.dequeueReusableCell(withIdentifier: cellId) as? SongTableViewCell else {
+            fatalError("The dequeued cell is not an instance of \(cellId)")
+        }
+        
+        myCell.songNameLabel.text = "The Best Song Ever"
+        myCell.artistLabel.text = "Surya Kukkapalli"
+        myCell.albumPic.image = UIImage(named: "fake_album_cover")
+        
+        return myCell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,14 +87,23 @@ class SongTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: Navigation
+extension SongTableViewController {
+    private func setupNavigationBarItems(){
+        navigationItem.title = "Song Queue"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        // Setting up add button
+        let addButton = UIButton(type: .contactAdd)
+        addButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+        addButton.contentMode = .scaleAspectFit
+        //addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        navigationItem.rightBarButtonItem  = UIBarButtonItem(customView: addButton)
+        
+        // Setting up edit button
+        //let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(showEditing))
+        //self.navigationItem.leftBarButtonItem = editButton
     }
-    */
-
 }

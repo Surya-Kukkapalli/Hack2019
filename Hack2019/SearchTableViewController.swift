@@ -113,7 +113,7 @@ extension SearchTableViewController {
         navigationItem.title = "Song Search"
         navigationController?.navigationBar.prefersLargeTitles = true
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = true
         searchController.searchBar.placeholder = "Search"
         navigationItem.searchController = searchController
         // If user goes to different view controller, search bar will disappear

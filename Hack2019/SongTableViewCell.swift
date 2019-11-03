@@ -10,15 +10,15 @@ import UIKit
 
 class SongTableViewCell: UITableViewCell {
 
-    public let profilePic: UIImageView = {
+    public let albumPic: UIImageView = {
             let pic = UIImageView()
-            pic.layer.cornerRadius = 35
+            pic.layer.cornerRadius = 10
             pic.layer.masksToBounds = true
             pic.translatesAutoresizingMaskIntoConstraints = false
             return pic
         }()
         
-        public let nameLabel: UILabel = {
+        public let songNameLabel: UILabel = {
             let label = UILabel()
             label.textColor = .black
             label.font = .boldSystemFont(ofSize: 19)
@@ -28,7 +28,7 @@ class SongTableViewCell: UITableViewCell {
             return label
         }()
         
-        public let descriptionLabel: UILabel = {
+        public let artistLabel: UILabel = {
             let label = UILabel()
             label.textColor = .black
             label.font = .systemFont(ofSize: 13)
@@ -40,9 +40,9 @@ class SongTableViewCell: UITableViewCell {
         
         override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
-            addSubview(nameLabel)
-            addSubview(descriptionLabel)
-            addSubview(profilePic)
+            addSubview(songNameLabel)
+            addSubview(artistLabel)
+            addSubview(albumPic)
             
             
             configureContraints()
@@ -55,26 +55,26 @@ class SongTableViewCell: UITableViewCell {
         
         private func configureContraints() {
             let distAwayFromLeft: CGFloat = 90
-            nameLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-            nameLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: distAwayFromLeft).isActive = true
+            songNameLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+            songNameLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: distAwayFromLeft).isActive = true
     //        nameLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3).isActive = true
     //        nameLabel.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-            nameLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-            nameLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
+            songNameLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+            songNameLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
             
-            descriptionLabel.topAnchor.constraint(equalTo: self.nameLabel.bottomAnchor, constant: -40).isActive = true
-            descriptionLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: distAwayFromLeft).isActive = true
+            artistLabel.topAnchor.constraint(equalTo: self.songNameLabel.bottomAnchor, constant: -40).isActive = true
+            artistLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: distAwayFromLeft).isActive = true
     //        descriptionLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/3).isActive = true
     //        descriptionLabel.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-            descriptionLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-            descriptionLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+            artistLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+            artistLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
             
-            profilePic.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
-            profilePic.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
+            albumPic.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+            albumPic.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
     //        profilePic.rightAnchor.constraint(equalTo: self.nameLabel.leftAnchor, constant: -15).isActive = true
     //        profilePic.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5).isActive = true
-            profilePic.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -17).isActive = true
-            profilePic.widthAnchor.constraint(equalTo: self.heightAnchor, constant: -17).isActive = true
+            albumPic.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -17).isActive = true
+            albumPic.widthAnchor.constraint(equalTo: self.heightAnchor, constant: -17).isActive = true
         }
 
 }
