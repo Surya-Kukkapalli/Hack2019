@@ -24,9 +24,13 @@ class TabBarViewController: UITabBarController {
         
         let currentSongVC = CurrentSongViewController()
         let currentSongNavController = UINavigationController(rootViewController: currentSongVC)
-        currentSongNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
+        currentSongNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 2)
         
-        viewControllers = [songNavController, searchNavController, currentSongNavController]
+        let historyVC = HistoryViewController()
+        let historyNavController = UINavigationController(rootViewController: historyVC)
+        historyNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 3)
+        
+        viewControllers = [songNavController, searchNavController, currentSongNavController, historyNavController]
     }
 
 }

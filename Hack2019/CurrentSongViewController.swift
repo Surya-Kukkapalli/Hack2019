@@ -10,6 +10,11 @@ import UIKit
 
 class CurrentSongViewController: UIViewController {
     
+    @objc func moreButtonPressed() {
+            let searchTableVC = SearchTableViewController()
+            navigationController?.pushViewController(searchTableVC, animated: true)
+        }
+    
     // declare view for album cover
     public let albumCover: UIImageView = {
         
@@ -48,7 +53,7 @@ class CurrentSongViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        setupNavigationBarItems();
         view.addSubview(albumCover)
         view.addSubview(songLabel)
         view.addSubview(artistLabel)
@@ -77,5 +82,19 @@ class CurrentSongViewController: UIViewController {
         artistLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
 
     }
-
  }
+
+// MARK: Navigation
+extension CurrentSongViewController {
+    private func setupNavigationBarItems(){
+        navigationItem.title = "Currently Playing"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        // Setting up add button
+        let moreButton = UIButton(type: .infoLight)
+        moreButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+        moreButton.contentMode = .scaleAspectFit
+        moreButton.addTarget(self, action: #selector(moreButtonPressed), for: .touchUpInside)
+        navigationItem.rightBarButtonItem  = UIBarButtonItem(customView: moreButton)
+    }
+}

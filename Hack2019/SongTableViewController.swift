@@ -18,7 +18,7 @@ class SongTableViewController: UITableViewController {
         self.tableView.register(SongTableViewCell.self, forCellReuseIdentifier: cellId)
         setupNavigationBarItems();
         refreshControl = UIRefreshControl()
-        configureRefreshControl()
+        configureRefreshControl();
     }
     
     @objc func addButtonPressed() {
