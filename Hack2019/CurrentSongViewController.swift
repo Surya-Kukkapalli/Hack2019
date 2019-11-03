@@ -24,7 +24,7 @@ class CurrentSongViewController: UIViewController {
     public let songLabel: UILabel = {
         let label = UILabel(frame: CGRect(x:0,y: 0,width: 250,height: 50))
         label.text = "Single Ladies"
-        label.textColor = .black
+        label.textColor = .label
         label.font = .boldSystemFont(ofSize: 26)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +36,7 @@ class CurrentSongViewController: UIViewController {
     public let artistLabel: UILabel = {
         let label = UILabel()
         label.text = "Astha Rastogi"
-        label.textColor = .black
+        label.textColor = .label
         label.font = .systemFont(ofSize: 20)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -54,14 +54,14 @@ class CurrentSongViewController: UIViewController {
         view.addSubview(artistLabel)
         
         self.title = "Currently Playing"
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
 
         configureContraints()
     }
     
     @objc func infoButtonPressed() {
         let songDetailsTableVC = SongDetailsTableViewController(nibName: nil, bundle: nil)
-        songDetailsTableVC.navigationItem.title = songLabel.text
+        songDetailsTableVC.navigationItem.title = "Song Details"
         navigationController?.pushViewController(songDetailsTableVC, animated: true)
     }
     
@@ -69,17 +69,20 @@ class CurrentSongViewController: UIViewController {
     private func configureContraints() {
 
         albumCover.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
-        albumCover.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 85).isActive = true
+//        albumCover.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 85).isActive = true
+        albumCover.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         albumCover.widthAnchor.constraint(equalTo: albumCover.widthAnchor).isActive = true
         albumCover.heightAnchor.constraint(equalTo: albumCover.heightAnchor).isActive = true
         
         songLabel.topAnchor.constraint(equalTo: albumCover.bottomAnchor, constant: 50).isActive = true
-        songLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//        songLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        songLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         songLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         songLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         artistLabel.topAnchor.constraint(equalTo: songLabel.bottomAnchor, constant: 30).isActive = true
-        artistLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//        artistLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        artistLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         artistLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         artistLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
 
