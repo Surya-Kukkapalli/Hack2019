@@ -16,8 +16,8 @@ class HistoryViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.register(SongTableViewCell.self, forCellReuseIdentifier: cellId)
         refreshControl = UIRefreshControl()
-        configureRefreshControl();
-        self.title = "Played Songs"
+        configureRefreshControl()
+        setupNavigationBarItems()
     }
 
     // MARK: - Table view data source
@@ -60,6 +60,17 @@ class HistoryViewController: UITableViewController {
     }
     */
 
+}
+
+// MARK: - Navigation
+extension HistoryViewController {
+    private func setupNavigationBarItems(){
+        navigationItem.title = "Played Songs"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        // If user goes to different view controller, search bar will disappear
+        definesPresentationContext = true
+        navigationItem.hidesSearchBarWhenScrolling = false
+    }
 }
 
 // MARK: Refresh control

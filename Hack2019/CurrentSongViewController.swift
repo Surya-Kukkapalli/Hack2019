@@ -10,11 +10,6 @@ import UIKit
 
 class CurrentSongViewController: UIViewController {
     
-    @objc func moreButtonPressed() {
-            let searchTableVC = SearchTableViewController()
-            navigationController?.pushViewController(searchTableVC, animated: true)
-        }
-    
     // declare view for album cover
     public let albumCover: UIImageView = {
         
@@ -64,6 +59,12 @@ class CurrentSongViewController: UIViewController {
         configureContraints()
     }
     
+    @objc func infoButtonPressed() {
+            let songDetailsTableVC = SongDetailsTableViewController()
+            navigationController?.pushViewController(songDetailsTableVC, animated: true)
+        }
+    
+    
     private func configureContraints() {
 
         albumCover.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
@@ -91,10 +92,10 @@ extension CurrentSongViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         // Setting up add button
-        let moreButton = UIButton(type: .infoLight)
-        moreButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
-        moreButton.contentMode = .scaleAspectFit
-        moreButton.addTarget(self, action: #selector(moreButtonPressed), for: .touchUpInside)
-        navigationItem.rightBarButtonItem  = UIBarButtonItem(customView: moreButton)
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+        infoButton.contentMode = .scaleAspectFit
+        infoButton.addTarget(self, action: #selector(infoButtonPressed), for: .touchUpInside)
+        navigationItem.rightBarButtonItem  = UIBarButtonItem(customView: infoButton)
     }
 }
