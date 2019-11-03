@@ -28,6 +28,7 @@
 		0BE0649F236E59C80035E9CA /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE0649E236E59C80035E9CA /* SongTableViewCell.swift */; };
 		0BE064A1236E5C6E0035E9CA /* CurrentSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE064A0236E5C6E0035E9CA /* CurrentSongViewController.swift */; };
 		DCAF3D54DCC0B26D260DB27C /* Pods_Hack2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */; };
+		F1267355236EA2F100856896 /* FireTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1267354236EA2F000856896 /* FireTest2.swift */; };
 		F1B81666236E8BE800817328 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B81665236E8BE800817328 /* HistoryViewController.swift */; };
 		F1B81668236E906B00817328 /* SongDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B81667236E906B00817328 /* SongDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hack2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.debug.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.release.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.release.xcconfig"; sourceTree = "<group>"; };
+		F1267354236EA2F000856896 /* FireTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTest2.swift; sourceTree = "<group>"; };
 		F1B81665236E8BE800817328 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		F1B81667236E906B00817328 /* SongDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0BE0647D236DFFC90035E9CA /* Song.swift */,
+				F1267354236EA2F000856896 /* FireTest2.swift */,
 				0BE06483236E064B0035E9CA /* Data.swift */,
 				0BE06489236E18740035E9CA /* PlaylistList.swift */,
 				0BE06493236E2A0D0035E9CA /* PlaylistTracks.swift */,
@@ -304,6 +307,7 @@
 				0BE0648A236E18740035E9CA /* PlaylistList.swift in Sources */,
 				0BE0647C236DFF3F0035E9CA /* SongRow.swift in Sources */,
 				0BE0649C236E56970035E9CA /* SongTableViewController.swift in Sources */,
+				F1267355236EA2F100856896 /* FireTest2.swift in Sources */,
 				0BE0647E236DFFC90035E9CA /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
