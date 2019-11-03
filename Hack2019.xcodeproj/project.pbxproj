@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		0B39A738236DC774000B3923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39A737236DC774000B3923 /* AppDelegate.swift */; };
 		0B39A73A236DC774000B3923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39A739236DC774000B3923 /* SceneDelegate.swift */; };
-		0B39A73C236DC774000B3923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39A73B236DC774000B3923 /* ContentView.swift */; };
 		0B39A73E236DC775000B3923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A73D236DC775000B3923 /* Assets.xcassets */; };
 		0B39A741236DC775000B3923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39A740236DC775000B3923 /* Preview Assets.xcassets */; };
 		0BDBB6C2236DE4F10092DE6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */; };
-		0BE0647C236DFF3F0035E9CA /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE0647B236DFF3F0035E9CA /* SongRow.swift */; };
 		0BE0647E236DFFC90035E9CA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE0647D236DFFC90035E9CA /* Song.swift */; };
 		0BE06484236E064B0035E9CA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE06483236E064B0035E9CA /* Data.swift */; };
-		0BE06486236E0E090035E9CA /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE06485236E0E090035E9CA /* SongList.swift */; };
 		0BE06488236E13660035E9CA /* yeet.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BE06487236E13660035E9CA /* yeet.json */; };
 		0BE0648A236E18740035E9CA /* PlaylistList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE06489236E18740035E9CA /* PlaylistList.swift */; };
 		0BE0648C236E189A0035E9CA /* playlistList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BE0648B236E189A0035E9CA /* playlistList.json */; };
@@ -37,15 +34,12 @@
 		0B39A734236DC774000B3923 /* Hack2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B39A737236DC774000B3923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B39A739236DC774000B3923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B39A73B236DC774000B3923 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B39A73D236DC775000B3923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B39A740236DC775000B3923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B39A745236DC775000B3923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0BE0647B236DFF3F0035E9CA /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		0BE0647D236DFFC90035E9CA /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		0BE06483236E064B0035E9CA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		0BE06485236E0E090035E9CA /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		0BE06487236E13660035E9CA /* yeet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yeet.json; sourceTree = "<group>"; };
 		0BE06489236E18740035E9CA /* PlaylistList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistList.swift; sourceTree = "<group>"; };
 		0BE0648B236E189A0035E9CA /* playlistList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = playlistList.json; sourceTree = "<group>"; };
@@ -97,7 +91,6 @@
 		0B39A736236DC774000B3923 /* Hack2019 */ = {
 			isa = PBXGroup;
 			children = (
-				0BE0649D236E59140035E9CA /* yeeted */,
 				0BE06482236E062C0035E9CA /* Models */,
 				0BE0647F236E02980035E9CA /* Resources */,
 				0BDBB6C1236DE4F10092DE6D /* GoogleService-Info.plist */,
@@ -145,16 +138,6 @@
 				0BE06493236E2A0D0035E9CA /* PlaylistTracks.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		0BE0649D236E59140035E9CA /* yeeted */ = {
-			isa = PBXGroup;
-			children = (
-				0BE0647B236DFF3F0035E9CA /* SongRow.swift */,
-				0BE06485236E0E090035E9CA /* SongList.swift */,
-				0B39A73B236DC774000B3923 /* ContentView.swift */,
-			);
-			path = yeeted;
 			sourceTree = "<group>";
 		};
 		22852155A5BE37C114897763 /* Pods */ = {
@@ -301,11 +284,8 @@
 				0BE0649F236E59C80035E9CA /* SongTableViewCell.swift in Sources */,
 				0B39A738236DC774000B3923 /* AppDelegate.swift in Sources */,
 				0B39A73A236DC774000B3923 /* SceneDelegate.swift in Sources */,
-				0B39A73C236DC774000B3923 /* ContentView.swift in Sources */,
-				0BE06486236E0E090035E9CA /* SongList.swift in Sources */,
 				0BE06498236E52360035E9CA /* SearchTableViewController.swift in Sources */,
 				0BE0648A236E18740035E9CA /* PlaylistList.swift in Sources */,
-				0BE0647C236DFF3F0035E9CA /* SongRow.swift in Sources */,
 				0BE0649C236E56970035E9CA /* SongTableViewController.swift in Sources */,
 				F1267355236EA2F100856896 /* FireTest2.swift in Sources */,
 				0BE0647E236DFFC90035E9CA /* Song.swift in Sources */,

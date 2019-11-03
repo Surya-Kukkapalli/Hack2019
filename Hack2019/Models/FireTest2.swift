@@ -10,7 +10,6 @@ import UIKit
 import SwiftUI
 import Foundation
 import Firebase
-import Promises
 
 //create an empty array of songs
 var eventqueue: [Song] = []

@@ -9,6 +9,8 @@
 import UIKit
 
 class SongDetailsTableViewController: UITableViewController {
+    
+        
         
         /* declare view to display album cover and name */
         public let coverAndName: UIImageView = {
@@ -80,7 +82,7 @@ class SongDetailsTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of \(cellId)")
         }
         
-        myCell.songNameLabel.text = "The Best Song Ever"
+        myCell.songNameLabel.text = "hello"
         myCell.artistLabel.text = "Surya Kukkapalli"
         myCell.albumPic.image = UIImage(named: "fake_album_cover")
         

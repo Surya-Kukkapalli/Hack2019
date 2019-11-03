@@ -11,22 +11,12 @@ import Foundation
 
 // MARK: - Song
 struct Song: Codable {
-    let timestamp: Int
-    let context: JSONNull?
-    let progressMS: Int
-    let item: Item
-    let currentlyPlayingType: String
-    let actions: Actions
-    let isPlaying: Bool
-
-    enum CodingKeys: String, CodingKey {
-        case timestamp, context
-        case progressMS = "progress_ms"
-        case item
-        case currentlyPlayingType = "currently_playing_type"
-        case actions
-        case isPlaying = "is_playing"
-    }
+    var id: String
+    var track: String
+    var artist: String
+    var votes: Int
+    var popularity: String
+    var album_cover: String
 }
 
 // MARK: - Actions

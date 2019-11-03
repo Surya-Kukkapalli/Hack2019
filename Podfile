@@ -7,7 +7,11 @@ target 'Hack2019' do
 
   # Pods for Hack2019
   # add the Firebase pod for Google Analytics
-  pod 'Firebase/Analytics'
+  pod 'FirebaseCore'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Functions'
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
 end
