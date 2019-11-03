@@ -29,6 +29,7 @@
 		0BE064A1236E5C6E0035E9CA /* CurrentSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE064A0236E5C6E0035E9CA /* CurrentSongViewController.swift */; };
 		DCAF3D54DCC0B26D260DB27C /* Pods_Hack2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1983E1B70808F69F56B0CF26 /* Pods_Hack2019.framework */; };
 		F1B81666236E8BE800817328 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B81665236E8BE800817328 /* HistoryViewController.swift */; };
+		F1B81668236E906B00817328 /* SongDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B81667236E906B00817328 /* SongDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8607F3A2CBF5AD23C50F1778 /* Pods-Hack2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.debug.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB987E021A148A7539810D0 /* Pods-Hack2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2019.release.xcconfig"; path = "Target Support Files/Pods-Hack2019/Pods-Hack2019.release.xcconfig"; sourceTree = "<group>"; };
 		F1B81665236E8BE800817328 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F1B81667236E906B00817328 /* SongDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				F1B81665236E8BE800817328 /* HistoryViewController.swift */,
 				0BE0649E236E59C80035E9CA /* SongTableViewCell.swift */,
 				0BE064A0236E5C6E0035E9CA /* CurrentSongViewController.swift */,
+				F1B81667236E906B00817328 /* SongDetailsTableViewController.swift */,
 			);
 			path = Hack2019;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				0BE06484236E064B0035E9CA /* Data.swift in Sources */,
 				0BE064A1236E5C6E0035E9CA /* CurrentSongViewController.swift in Sources */,
 				0BE06494236E2A0D0035E9CA /* PlaylistTracks.swift in Sources */,
+				F1B81668236E906B00817328 /* SongDetailsTableViewController.swift in Sources */,
 				F1B81666236E8BE800817328 /* HistoryViewController.swift in Sources */,
 				0BE0649A236E551D0035E9CA /* TabBarViewController.swift in Sources */,
 				0BE0649F236E59C80035E9CA /* SongTableViewCell.swift in Sources */,
